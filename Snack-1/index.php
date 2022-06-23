@@ -38,6 +38,11 @@ $games = [
     <title>Calendar</title>
 </head>
 <body>
-    
+    <h1>Results:</h1>
+    <ul>
+        <?php foreach($games as $game) { ?>
+            <li><?php echo $game['homeTeam'] . " - ". $game['awayTeam'] . " | " . $game['homeScore'] . "-" . $game['awayScore'] ?></li>
+        <?php } ?>
+    </ul>
 </body>
 </html>
